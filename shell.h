@@ -12,6 +12,7 @@
 #include <dirent.h>
 #include <signal.h>
 
+
 /*constants*/
 #define EXTERNAL_COMMAND 1
 #define INTERNAL_COMMAND 2
@@ -21,7 +22,7 @@
 #define min(x, y) (((x) < (y)) ? (x) : (y))
 
 /**
- *struct map - a struct that maps a command name to a function 
+ *struct map - a struct that maps a command name to a function
  *
  *@command_name: name of the command
  *@func: the function that executes the command
@@ -74,6 +75,5 @@ void quit(char **);
 /*main*/
 extern void non_interactive(void);
 extern void initializer(char **current_command, int type_command);
-void print_name(char *name, void (*f)(char *));
 
 #endif /*SHELL_H*/
